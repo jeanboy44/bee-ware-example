@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.5
+Name: calculator
+Formal-Name: Calculator
+App-ID: com.example.calculator
+Version: 0.0.1
+Home-page: https://example.com/calculator
+Author: Jingeol Ryu
+Author-email: eesidoro44@gmail.com
+Summary: Calculator Example
