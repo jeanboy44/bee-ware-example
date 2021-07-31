@@ -10,10 +10,7 @@ class HelloWorld(toga.App):
     def startup(self):
         main_box = toga.Box(style=Pack(direction=COLUMN))
 
-        name_label = toga.Label(
-            'Your name: ',
-            style=Pack(padding=(0, 5))
-        )
+        name_label = toga.Label("Your name: ", style=Pack(padding=(0, 5)))
         self.name_input = toga.TextInput(style=Pack(flex=1))
 
         name_box = toga.Box(style=Pack(direction=ROW, padding=5))
@@ -21,9 +18,7 @@ class HelloWorld(toga.App):
         name_box.add(self.name_input)
 
         button = toga.Button(
-            'Say Hello!',
-            on_press=self.say_hello,
-            style=Pack(padding=5)
+            "Say Hello!", on_press=self.say_hello, style=Pack(padding=5)
         )
 
         main_box.add(name_box)
@@ -34,7 +29,7 @@ class HelloWorld(toga.App):
         self.main_window.show()
 
     def say_hello(self, widget):
-        print("Hello", self.name_input.value)
+        self.main_window.info_dialog("Hi there!", f"Hello, {self.name_input.value}")
 
 
 def main():
