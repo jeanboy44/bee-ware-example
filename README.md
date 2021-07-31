@@ -1,2 +1,2 @@
 # bee-ware-examples
-bee-ware-example
+bee-ware-examples
